@@ -1,71 +1,67 @@
-# DDControl – Landing Page de Desinsetização Profissional
+# DDControl – Landing Page
 
-Landing page responsiva da **DDControl**, empresa de controle de pragas com mais de 19 anos de atuação em **Cuiabá, Várzea Grande e Chapada dos Guimarães (MT)**. O objetivo do site é apresentar os serviços e converter visitantes em contatos via **WhatsApp**.
+Landing page institucional desenvolvida para a DDControl, empresa de desinsetização de Cuiabá (MT). O projeto foi feito com HTML, CSS e JavaScript puro, sem frameworks ou bibliotecas, e tem como objetivo apresentar os serviços da empresa e direcionar o visitante para o contato via WhatsApp.
 
-## ✨ Funcionalidades
+Este repositório faz parte do meu portfólio como desenvolvedor front-end.
 
-- Hero com chamada para ação (CTA) e mensagem pré-preenchida no WhatsApp
-- Seção de serviços: desinsetização, baratas, formigas, aranhas, traças, escorpiões, cupins, mosquitos, moscas, pombos, roedores e limpeza/desinfecção
-- Diferenciais: relatório com imagens reais, orientação para crianças e pets, responsável técnico e reforço incluído
-- Depoimentos de clientes e seção de garantia
-- Limpeza e desinfecção de caixa d'água
-- Passo a passo do atendimento (contato, visita, aplicação e relatório)
-- Botão flutuante do WhatsApp, exibido após rolar a página
-- Header fixo que muda de estilo ao rolar e menu mobile com animação
-- Rolagem suave entre seções
-- Animações de entrada com `IntersectionObserver` e leve efeito parallax no hero
-- SEO básico (`title`, `meta description` e `lang="pt-BR"`)
+## Sobre o projeto
 
-## 🛠️ Tecnologias
+A página foi pensada para um público que acessa principalmente pelo celular e busca uma solução rápida. Por isso, a estrutura segue uma sequência simples: apresentação com chamada para contato, serviços, diferenciais, depoimentos, garantia, etapas do atendimento e uma chamada final.
 
-- HTML5 semântico
-- CSS3 (variáveis customizadas, Flexbox, Grid e responsividade)
-- JavaScript puro (Vanilla), sem dependências
-- Google Fonts (Inter)
+Minha responsabilidade abrangeu toda a parte de front-end: estrutura em HTML, estilização, responsividade e interações em JavaScript.
 
-## 📁 Estrutura do projeto
+## Decisões técnicas
+
+- **HTML semântico e SEO básico:** uso de `lang="pt-BR"`, `title` e `meta description` voltados para busca local.
+- **CSS com variáveis customizadas:** cores, sombras, raios de borda e transições centralizados em `:root`, o que facilita a manutenção e mantém o visual consistente.
+- **Layout responsivo:** construído com Flexbox e Grid, com menu mobile próprio.
+- **JavaScript puro:** toda a interatividade foi feita sem dependências, mantendo a página leve.
+
+## Funcionalidades em JavaScript
+
+- **Animações de entrada** com `IntersectionObserver`, incluindo atraso escalonado nos cards por meio do atributo `data-delay`.
+- **Rolagem suave** entre seções, com compensação da altura do header fixo.
+- **Header que muda de estilo** conforme a rolagem da página.
+- **Menu mobile** com alternância de ícone e fechamento automático ao navegar.
+- **Botão flutuante do WhatsApp**, exibido após 300px de rolagem.
+- **Efeito parallax** leve em elementos decorativos do hero.
+- **Navegação centralizada** por atributos `data-section`, com um único handler de rolagem.
+
+## Tecnologias
+
+HTML5, CSS3, JavaScript (ES6+) e Google Fonts (Inter).
+
+## Estrutura
 
 ```
-├── index.html      # Estrutura e conteúdo da página
-├── styles.css      # Estilos, tema e responsividade
-├── script.js       # Interações, animações e navegação
+├── index.html      # Estrutura e conteúdo
+├── styles.css      # Estilos, variáveis e responsividade
+├── script.js       # Interações e animações
 └── assets/         # Logo e imagens
 ```
 
-## 🚀 Como executar
+## Como executar
 
-1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/ddcontrol.git
+cd ddcontrol
+```
 
-   ```bash
-   git clone https://github.com/seu-usuario/ddcontrol.git
-   ```
+Abra o `index.html` no navegador ou utilize a extensão Live Server do VS Code. Não há dependências para instalar.
 
-2. Entre na pasta do projeto:
+## Pontos de melhoria
 
-   ```bash
-   cd ddcontrol
-   ```
+Itens que identifiquei para evoluir o projeto:
 
-3. Abra o `index.html` no navegador ou use uma extensão como o **Live Server** (VS Code).
+- Otimizar imagens (formato WebP e `loading="lazy"`).
+- Respeitar a preferência `prefers-reduced-motion` nas animações.
+- Usar `requestAnimationFrame` ou throttle nos eventos de scroll.
+- Adicionar dados estruturados (Schema.org `LocalBusiness`).
 
-Não é necessário instalar nada.
+## Autor
 
-## 🎨 Identidade visual
+**Marcos Martins da Silva**
+Desenvolvedor
 
-| Elemento | Valor |
-| --- | --- |
-| Cor primária | `#540604` |
-| Cor primária (clara) | `#8b0a07` |
-| Tipografia | Inter |
-
-## 🌐 Deploy
-
-Por ser um site estático, pode ser publicado gratuitamente no **GitHub Pages**, Netlify ou Vercel. No GitHub Pages: *Settings → Pages → Deploy from a branch → `main` / root*.
-
-## 📞 Contato
-
-Atendimento via WhatsApp: **(65) 3649-9090** e **(65) 9981-7398**
-
----
-
-Desenvolvido para a **DDControl** · Cuiabá, MT
+- E-mail: marcos.msilva.work@gmail.com
+- LinkedIn: [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/marcos-martins-da-silva-037262415/)
